@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name:  potato
-        image:  leandrogelain03/potato:1.0
+        image:  leandrogelain03/potato
         ports:
         - containerPort: 5000
         env:
