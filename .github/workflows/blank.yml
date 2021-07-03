@@ -64,4 +64,4 @@ jobs:
           manifests: |
             k8s/app/deployment.yaml
             k8s/app/service.yaml
-      
+          images: leandrogelain03/potato:${{ github.run_number }}
