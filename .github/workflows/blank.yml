@@ -28,9 +28,9 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PWD }}
-      - name: Build and push Docker Images
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses:  docker/build-push-action@v2.6.1
+      - name: Build and push Docker Images
         with: 
           context: ./src
           file: ./src/Dockerfile
